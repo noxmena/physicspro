@@ -12,6 +12,8 @@ import Reference from "./pages/Reference";
 import Quizzes from "./pages/Quizzes";
 import Syllabus from "./pages/Syllabus";
 
+import Questions from "./pages/Questions";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -23,6 +25,7 @@ export default function App() {
           <Route path="quizzes" element={<Quizzes />} />
           <Route path="exam" element={<MockExam />} />
           <Route path="syllabus" element={<Syllabus />} />
+          <Route path="questions" element={<Questions />} />
         </Route>
       </Routes>
     </BrowserRouter>

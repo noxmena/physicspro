@@ -262,9 +262,6 @@ export default function Quizzes() {
   }
 
   // --- End Screen ---
-  if ((currentIndex >= totalQuestionsTotal || (showResult && currentIndex >= totalQuestionsTotal - 1 && mode === "menu" /* special case handled below */)) && totalQuestionsTotal > 0) {
-      // Logic handled via the result screen return below
-  }
 
   if (currentIndex >= totalQuestionsTotal && totalQuestionsTotal > 0) {
     return (

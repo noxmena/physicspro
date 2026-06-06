@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BookOpen, AlertCircle, PlayCircle, Trophy, Lightbulb, Zap, HelpCircle, ArrowRight } from "lucide-react";
+import { BookOpen, AlertCircle, PlayCircle, Trophy, Lightbulb, Zap, HelpCircle, ArrowRight, Sparkles } from "lucide-react";
 import { definitions, laws } from "../data";
 import { motion } from "motion/react";
 
@@ -90,7 +90,7 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <Link 
           to="/lessons" 
           className="group relative bg-gradient-to-br from-indigo-600 to-indigo-700 text-white p-10 rounded-[2.5rem] shadow-xl shadow-indigo-200/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
@@ -118,6 +118,21 @@ export default function Dashboard() {
           <p className="text-purple-100/80 font-medium text-lg max-w-xs">Test yourself with multiple-choice and formula matching challenges.</p>
           <div className="mt-8 flex items-center gap-2 font-bold group-hover:gap-4 transition-all uppercase tracking-widest text-sm">
             Start Quiz <ArrowRight className="w-4 h-4" />
+          </div>
+        </Link>
+
+        <Link 
+          to="/questions" 
+          className="group relative bg-gradient-to-br from-sky-500 to-blue-600 text-white p-10 rounded-[2.5rem] shadow-xl shadow-blue-200/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+        >
+          <div className="absolute right-0 bottom-0 opacity-10 group-hover:scale-110 transition-transform duration-500">
+            <Sparkles className="w-64 h-64 -mb-20 -mr-20" />
+          </div>
+          <Sparkles className="w-10 h-10 mb-6 text-blue-100" />
+          <h3 className="text-3xl font-bold mb-3">Questions Bank</h3>
+          <p className="text-blue-100/80 font-medium text-lg max-w-xs">Interactive flashcards & grading for 100+ questions based on the reference.</p>
+          <div className="mt-8 flex items-center gap-2 font-bold group-hover:gap-4 transition-all uppercase tracking-widest text-sm">
+            Start Training <ArrowRight className="w-4 h-4" />
           </div>
         </Link>
       </section>

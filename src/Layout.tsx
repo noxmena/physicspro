@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { BookOpen, HelpCircle, FileText, Activity, Layers, ShieldCheck } from "lucide-react";
+import { BookOpen, HelpCircle, FileText, Activity, Layers, ShieldCheck, Sparkles } from "lucide-react";
 import { cn } from "./lib/utils";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -11,6 +11,7 @@ export default function Layout() {
     { to: "/lessons", icon: BookOpen, label: "Lessons" },
     { to: "/reference", icon: FileText, label: "Reference Guide" },
     { to: "/quizzes", icon: HelpCircle, label: "Practice" },
+    { to: "/questions", icon: Sparkles, label: "Questions Bank" },
     { to: "/exam", icon: ShieldCheck, label: "2023 Mock Exam" },
     { to: "/syllabus", icon: Layers, label: "Syllabus" },
   ];
